@@ -20,21 +20,18 @@ $(document).ready(function(){
                          dataSet.push(items);
                   }); // end .each
 
-                var chart = c3.generate({
-      data: { columns:['Rank', dataSet] },
-               //['sample2', 130, 300, 200, 500, 250, 350]
-
-       axis: {
-           x: {
-               label: 'X Label'
-           },
-           y: {
-               label: 'Y Label'
-           }
-       }
-   });
-          }); // end .getJSON
-        });//end get_data2
+                  var chart = c3.generate({
+        data: {
+            columns: [
+              ['Lulu', 50,4,3,2],
+              ['Olaf', 50,6,8,1]
+            ],
+            type : 'bar'
+        },
+        bar: {
+            title: "Dogs love:",
+        }
+     });
 
         $("button#get_data1").click(function(){
           dataSet=[];
