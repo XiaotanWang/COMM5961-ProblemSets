@@ -20,13 +20,9 @@ $(document).ready(function(){
                   }); // end .each
 
                 var chart = c3.generate({
-       data: {
-           columns: [
-               ['Rank', dataSet[0], dataSet[1] ]
-             ],
+      data: { columns: dataSet },
                //['sample2', 130, 300, 200, 500, 250, 350]
 
-       },
        axis: {
            x: {
                label: 'X Label'
