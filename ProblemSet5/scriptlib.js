@@ -21,7 +21,7 @@ $(document).ready(function(){
                   }); // end .each
 
                 var chart = c3.generate({
-      data: { columns: dataSet },
+      data: { columns:['Rank', dataSet] },
                //['sample2', 130, 300, 200, 500, 250, 350]
 
        axis: {
